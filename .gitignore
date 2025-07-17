@@ -2,3 +2,5 @@
 /core/__pycache__
 /core/formulas/__pycache__
 /gui/widgets/__pycache__
+/build
+/dist

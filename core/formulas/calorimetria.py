@@ -1,7 +1,6 @@
 from .base_formula import BaseFormula
 from ..unit_handler import Q_
 from typing import Dict, List, Tuple
-import numpy as np
 
 class CalorEspecifico(BaseFormula):
     name = "Calorimetría (Calor Sensible)"

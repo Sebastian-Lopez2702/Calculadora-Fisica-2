@@ -13,6 +13,8 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("Calculadora")
         self.setGeometry(100, 100, 900, 600)
         
+        self.statusBar().showMessage("Calculadora lista.", 3000)
+
         self.formulas = {f.name: f() for f in load_formulas()}
 
         self.setup_ui()
@@ -45,6 +47,8 @@ class MainWindow(QMainWindow):
 
             formula_view = FormulaView(formula_instance)
             self.stacked_widget.addWidget(formula_view)
+
+            formula_view._check_unit_consistency()
             
     def on_formula_selected(self, current_item, previous_item):
         if current_item:
