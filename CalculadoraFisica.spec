@@ -1,4 +1,4 @@
-# ThermoCalculadora.spec
+# CalculadoraFisica.spec
 
 # -*- mode: python ; coding: utf-8 -*-
 
@@ -33,7 +33,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='ThermoCalculadora',
+    name='CalculadoraFisica',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

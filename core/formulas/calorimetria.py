@@ -9,7 +9,7 @@ class CalorEspecifico(BaseFormula):
     variables: List[Tuple[str, str, str]] = [
         ('masa', 'm', 'gram'),
         ('calor_especifico', 'c', 'joule / (gram * kelvin)'),
-        ('delta_temperatura', r"\Delta T", 'delta_degree_Celsius')
+        ('delta_temperatura', r"\Delta T", 'kelvin')
     ]
     
     target_variable: Tuple[str, str, str] = ('calor', 'Q', 'joule')
@@ -31,10 +31,10 @@ class DilatacionLineal(BaseFormula):
     variables: List[Tuple[str, str, str]] = [
         ('longitud_inicial', r'L_0', 'meter'),
         ('coeficiente_dilatacion', r'\alpha', '1 / kelvin'),
-        ('delta_temperatura', r'\Delta T', 'delta_degree_Celsius')
+        ('delta_temperatura', r'\Delta T', 'kelvin')
     ]
     
-    target_variable: Tuple[str, str, str] = ('delta_longitud', r'\Delta L', 'millimeter')
+    target_variable: Tuple[str, str, str] = ('delta_longitud', r'\Delta L', 'meter')
     
     formula_latex: str = r"\Delta L = \alpha \cdot L_0 \cdot \Delta T"
 
@@ -53,7 +53,7 @@ class EquilibrioTermico(BaseFormula):
     variables = [
         ('masa_1', 'm_1', 'gram'),
         ('calor_especifico_1', 'c_1', 'joule / (gram * kelvin)'),
-        ('delta_T1', r'\Delta T_1', 'delta_degree_Celsius'),
+        ('delta_T1', r'\Delta T_1', 'kelvin'),
         ('masa_2', 'm_2', 'gram'),
         ('calor_especifico_2', 'c_2', 'joule / (gram * kelvin)')
     ]

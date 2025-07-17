@@ -16,7 +16,7 @@ PREFERRED_UNITS = {
     
     'kelvin': ['kelvin', 'degree_Celsius', 'degree_Fahrenheit'],
     
-    'degree_Celsius': ['degree_Celsius', 'kelvin', 'degree_Fahrenheit'],
+    'kelvin': ['kelvin'],
     
     'delta_degree_Celsius': ['delta_degree_Celsius', 'kelvin', 'delta_degree_Fahrenheit'],
     

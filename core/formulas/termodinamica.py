@@ -116,10 +116,10 @@ class CapacidadCalorifica(BaseFormula):
     
     variables = [
         ('calor', 'Q', 'joule'),
-        ('delta_temperatura', r'\Delta T', 'delta_degree_Celsius')
+        ('delta_temperatura', r'\Delta T', 'kelvin')
     ]
     
-    target_variable = ('capacidad_calorifica', 'C', 'joule / delta_degree_Celsius')
+    target_variable = ('capacidad_calorifica', 'C', 'joule / kelvin')
     
     formula_latex = r"C = \frac{Q}{\Delta T}"
 
